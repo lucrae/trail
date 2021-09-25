@@ -1,0 +1,97 @@
+/* Variables */
+@import "vars.css";
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--col-bg);
+  color: var(--col-fg);
+}
+
+/* ============================================================================
+SECTIONS
+============================================================================ */
+
+.section-wrapper {
+  margin: 16px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    'header-section header-section'
+    'side-section main-section'
+}
+.section-head {grid-area: header-section;}
+.section-side {grid-area: side-section;}
+.section-primary {grid-area: main-section;}
+
+/* ============================================================================
+GENERIC
+============================================================================ */
+
+.icon img {
+  height: 24px;
+}
+
+button {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: var(--col-panel-highlight);
+  border: 2px solid var(--col-panel-border);
+  color: var(--col-fg);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--col-fg);
+  border: 2px solid var(--col-fg);
+  color: var(--col-bg);
+}
+
+/* ============================================================================
+PANELS
+============================================================================ */
+
+.panel {
+  background-color: var(--col-panel-bg);
+  border: 2px solid var(--col-panel-border);
+  margin-bottom: 16px;
+}
+
+.panel-head {
+  background-color: var(--col-panel-border);
+  color: var(--col-fg-soft);
+  padding: 4px;
+
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.panel-body {
+  border-top: 1px solid var(--col-panel-border);
+  padding: 4px;
+}
+
+.panel-row {
+  display: flex;
+}
+
+.panel-row-text {
+  padding: 4px;
+}
+
+.panel-row-grow {
+  flex-grow: 1;
+}
+
+.panel-row-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}

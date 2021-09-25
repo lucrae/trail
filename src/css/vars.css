@@ -1,0 +1,30 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+:root {
+  --font-family: 'Roboto Slab', serif;
+  --font-size: 16px;
+
+  /* base colours */
+  --col-blue: #0275d8;
+  --col-green: #5cb85c;
+  --col-aqua: #5bc0de;
+  --col-orange: #f0ad4e;
+  --col-red: #d9534f;
+  --col-white: #ffffff;
+  --col-lightest-gray: #f0f0f0;
+  --col-light-gray: #d8d8d8;
+  --col-gray: #cccccc;
+  --col-dark-gray: #666666;
+  --col-darkest-gray: #333333;
+  --col-black: #292b2c;
+
+  /* colours */
+  --col-bg: var(--col-lightest-gray);
+  --col-fg: var(--col-black);
+  --col-fg-soft: var(--col-dark-gray);
+  
+  --col-panel-bg: var(--col-white);
+  --col-panel-border: var(--col-light-gray);
+  --col-panel-highlight: var(--col-lightest-gray);
+}
